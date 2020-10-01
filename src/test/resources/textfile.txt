@@ -1,0 +1,4 @@
+some text here
+
+
+C:\Users\mehme\IdeaProjects\EU3TestNGSelenium\src\test\resources\textfile.txt

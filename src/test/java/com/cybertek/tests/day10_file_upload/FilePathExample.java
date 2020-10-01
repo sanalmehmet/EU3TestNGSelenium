@@ -1,0 +1,26 @@
+package com.cybertek.tests.day10_file_upload;
+
+import org.testng.annotations.Test;
+
+public class FilePathExample {
+
+    @Test
+
+    public void test1(){
+        //C:\Users\mehme\IdeaProjects\EU3TestNGSelenium\src\test\resources\textfile.txt    //src den itibaren personal path
+
+        //C:\Users\mehme\IdeaProjects\EU3TestNGSelenium                                     //burasi dynamic location
+        //System.out.println(System.getProperty("user.dir"));
+
+        String projectPath= System.getProperty("user.dir");
+
+        System.out.println("projectPath = " + projectPath);
+
+        String filePath= "src/test/resources/textfile.txt";
+
+        String  fullPath= projectPath+"/"+filePath;
+
+        System.out.println(fullPath);
+
+    }
+}
