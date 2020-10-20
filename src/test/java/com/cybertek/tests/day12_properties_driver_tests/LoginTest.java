@@ -20,7 +20,7 @@ public class LoginTest extends TestBase {
     @Test
     public void OpenBrowserWithConf(){
 
-        driver.get(ConfigurationReader.get("url"));
+        driver.get(ConfigurationReader.get("url"));         //we dont use WebdriverFactory anymore
 
         String username = ConfigurationReader.get("driver_username");
         String password = ConfigurationReader.get("driver_password");

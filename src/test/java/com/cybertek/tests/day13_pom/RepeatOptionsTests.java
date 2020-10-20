@@ -90,6 +90,7 @@ public class RepeatOptionsTests extends TestBase {
         // Click on repeat
         createCalendarEventsPage.repeat.click();
 
+
         Select repeatsDropdown = createCalendarEventsPage.repeatOptionsList();
 
         // Verify that repeat options are Daily, Weekly, Monthly,Yearly(in this order)

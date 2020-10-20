@@ -22,11 +22,11 @@ public class TestBase {
     protected WebDriver driver;
     protected Actions actions;
     protected WebDriverWait wait;
-    protected ExtentReports report;
+    protected static ExtentReports report;
     //this class is used to create HTML report file
-    protected ExtentHtmlReporter htmlReporter;
+    protected static ExtentHtmlReporter htmlReporter;
     //this will  define a test, enables adding logs, authors, test steps
-    protected ExtentTest extentLogger;
+    protected static ExtentTest extentLogger;
 
     @BeforeTest
     public void setUpTest(){
@@ -80,7 +80,6 @@ public class TestBase {
             //capture the exception and put inside the report
             extentLogger.fail(result.getThrowable());
 
-
         }
         Thread.sleep(2000);
         Driver.closeDriver();
@@ -92,5 +91,7 @@ public class TestBase {
         report.flush();
 
     }
+
+
 
 }

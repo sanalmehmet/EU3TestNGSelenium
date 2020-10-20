@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Vytrack Automation" verbose="1">
+    <test name="Vytrack Smoke Test">
+        <packages>
+            <package name="com.cybertek.tests.day14_extent_reports"></package>
+            <package name="com.cybertek.tests.day11_webtables"></package>
+        </packages>
+    </test>
+</suite>
+
+<!-- for all tests .*      for one class <class><class>  -->
+        <!-- for a specific test case inside the "class"  between the class
+        we gonna add "methods> include name= test name <methods"    -->
+
+        <!-- "exclude" ignore one test case inside the class  -->
